@@ -11,8 +11,11 @@ height: 50px; color: white; background-color: #855cd6; border: 0px; font-family:
 height: 50px; display: flex; flex-direction: row
 }
 .logo {
-font-size: 25px
+font-size: 25px;
 }
 .nav-blank {
 width: calc( 100% - (129.56px + 97.39px))
+}
+.dhdfuhrifiOS {
+cursor: pointer
 }
