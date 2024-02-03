@@ -1,0 +1,18 @@
+body {
+ user-select: none; margin: 0px
+}
+.look {
+font-family: noto sans;overflow:auto;height: calc(100% - 50px);align-items: flex-start;flex-flow: column
+}
+button {
+height: 50px; color: white; background-color: #855cd6; border: 0px; font-family: noto sans
+}
+.nav {
+height: 50px; display: flex; flex-direction: row
+}
+.logo {
+font-size: 25px
+}
+.nav-blank {
+width: calc( 100% - (129.56px + 97.39px))
+}
