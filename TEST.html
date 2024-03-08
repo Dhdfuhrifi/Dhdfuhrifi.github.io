@@ -5,13 +5,19 @@
 </head>
 <body>
   <input type="text" id="urlInput" placeholder="Enter URL">
-  <button onclick="loadURL()">Go</button>
+  <button id="goButton">Go</button>
   <iframe id="urlFrame"></iframe>
+
   <script>
-    function loadURL() {
-      var url = document.getElementById("urlInput").value;
-      document.getElementById("urlFrame").src = url;
-    }
+const urlInput = document.getElementById("urlInput");
+const goButton = document.getElementById("goButton");
+const urlFrame = document.getElementById("urlFrame");
+
+goButton.addEventListener("click", () => {
+  const url = urlInput.value;
+  urlFrame.src = url;
+  urlInput.value = url;
+});
   </script>
 </body>
 </html>
