@@ -1,23 +1,69 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Iframe Loader</title>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Loader</title>
+    <style>/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+}
+div {background-color:#9966ff}
+body {
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+#url-input {width:calc(100% - 45px);margin:5px}
+#url-input, #go-button {
+  padding: 2.5px;
+  border: 2px solid #000000;
+  font-family: noto sans;
+}
+
+#go-button {
+  cursor: pointer;
+  background-color: #9966ff;
+  width:26.6px
+}
+
+#my-iframe {
+  width: calc(100% - 3px); /* Adjust width as needed */
+  height: calc(100% - 40px); /* Adjust height as needed */
+  border: 2px solid #000000;
+}
+    </style>
 </head>
 <body>
-  <input type="text" id="urlInput" placeholder="Enter URL">
-  <button id="goButton">Go</button>
-  <iframe id="urlFrame" style=height:100%></iframe>
+    <div>
+    <input type="text" id="url-input" placeholder="Enter URL">
+    <button id="go-button">Go</button>
+    </div>
+    <iframe id="my-iframe"></iframe>
+    <script>
+       const urlInput = document.getElementById('url-input');
+const goButton = document.getElementById('go-button');
+const iframe = document.getElementById('my-iframe');
 
-  <script>
-const urlInput = document.getElementById("urlInput");
-const goButton = document.getElementById("goButton");
-const urlFrame = document.getElementById("urlFrame");
-
-goButton.addEventListener("click", () => {
+goButton.addEventListener('click', () => {
   const url = urlInput.value;
-  urlFrame.src = url;
-  urlInput.value = url;
+  iframe.src = url;
 });
-  </script>
-</body>
-</html>
+    </script>
+
+</body></html>
