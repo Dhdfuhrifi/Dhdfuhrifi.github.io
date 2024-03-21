@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Paint Program</title>
+    <style>
+        body { margin: 0; }
+        canvas { 
+            width: 100vw;
+            height: 100vh;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        let isDrawing = false;
+        let x = 0;
+        let y = 0;
+        
+        canvas.addEventListener('mousedown', (e) => {
+            isDrawing = true;
+            x = e.clientX;
+            y = e.clientY;
+        });
+        
+        canvas.addEventListener('mouseup', () => {
+            isDrawing = false;
+        });
+        
+        canvas.addEventListener('mousemove', (e) => {
+            if (isDrawing) {
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                x = e.clientX;
+                y = e.clientY;
+                ctx.lineTo(x, y);
+                ctx.stroke();
+            }
+        });
+    </script>
+</body>
+</html>
