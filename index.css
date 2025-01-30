@@ -8,13 +8,10 @@ button {
 height: 50px; color: white; background-color: #855cd6; border: 0px; font-family: noto sans
 }
 .nav {
-height: 50px; display: flex; flex-direction: row
+height: 50px; display: flex; flex-direction: row; justify-content="space-between"
 }
 .logo {
 font-size: 25px;
-}
-.nav-blank {
-width: calc( 100% - (129.56px + 97.39px))
 }
 .dhdfuhrifiOS {
 cursor: pointer
