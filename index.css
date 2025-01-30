@@ -8,7 +8,7 @@ button {
 height: 50px; color: white; background-color: #855cd6; border: 0px; font-family: noto sans
 }
 .nav {
-height: 50px; display: flex; flex-direction: row; justify-content="space-between"
+height: 50px; display: flex; flex-direction: row; justify-content:space-between; background-color: #855cd6
 }
 .logo {
 font-size: 25px;
