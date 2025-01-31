@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Iframe Loader</title>
+<style>
+#iframe-container {
+  width: 800px;
+  height: 600px;
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<input type="text" id="url-textbox" value="https://www.example.com">
+<button onclick="loadIframe()">Go</button>
+
+<div id="iframe-container">
+  <iframe id="my-iframe" src=""></iframe>
+</div>
+
+<script>
+function loadIframe() {
+  var url = document.getElementById("url-textbox").value;
+  document.getElementById("my-iframe").src = url;
+}
+
+// Add event listener for enter key press
+document.getElementById("url-textbox").addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    loadIframe();
+  }
+});
+</script>
+
+</body>
+</html>
