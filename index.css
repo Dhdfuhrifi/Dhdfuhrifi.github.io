@@ -19,6 +19,9 @@ border-radius: 5px; cursor: pointer
 .about {
  cursor: pointer
 }
-a {
+.text {
  font-size:20px;display:flex;justify-content: center;text-align: center;margin:10px
+}
+.projects {
+ style="display:flex;justify-content: center"
 }
