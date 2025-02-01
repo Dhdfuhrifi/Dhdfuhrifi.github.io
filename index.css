@@ -14,5 +14,8 @@ height: 50px; display: flex; flex-direction: row; justify-content:space-between;
 font-size: 25px;
 }
 .dhdfuhrifiOS {
-cursor: pointer
+border-radius: 5px; cursor: pointer
+}
+.about {
+ cursor: pointer
 }
