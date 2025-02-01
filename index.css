@@ -19,3 +19,6 @@ border-radius: 5px; cursor: pointer
 .about {
  cursor: pointer
 }
+a {
+ font-size:20px;display:flex;justify-content: center;text-align: center;margin:10px
+}
