@@ -1,0 +1,27 @@
+body {
+ user-select: none; margin: 0px
+}
+.look {
+font-family: noto sans;overflow:auto;height: calc(100% - 50px);align-items: flex-start;flex-flow: column
+}
+button {
+height: 50px; color: white; background-color: #855cd6; border: 0px; font-family: noto sans
+}
+.nav {
+height: 50px; display: flex; flex-direction: row; justify-content:space-between; background-color: #855cd6
+}
+.logo {
+font-size: 25px;
+}
+.logo {
+ cursor: pointer
+}
+.text {
+ font-size:20px;display:flex;justify-content: center;text-align: center;margin:10px
+}
+.AboutDhdfuhrifi {
+ display:flex;justify-content: center;text-align: center;margin:10px
+}
+.link {
+ color: #855cd6
+}
